@@ -14,6 +14,7 @@
 		F2B238B323282C1A00F16C34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2B238B223282C1A00F16C34 /* Assets.xcassets */; };
 		F2B238B623282C1A00F16C34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B238B423282C1A00F16C34 /* LaunchScreen.storyboard */; };
 		F2B238C123282C1A00F16C34 /* AWMTest01Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B238C023282C1A00F16C34 /* AWMTest01Tests.swift */; };
+		F2B238D0232840E200F16C34 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B238CF232840E200F16C34 /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,8 @@
 		F2B238BC23282C1A00F16C34 /* AWMTest01Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AWMTest01Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2B238C023282C1A00F16C34 /* AWMTest01Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWMTest01Tests.swift; sourceTree = "<group>"; };
 		F2B238C223282C1A00F16C34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2B238CF232840E200F16C34 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		F2B238D2232843C700F16C34 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,7 @@
 				F2B238A923282C1900F16C34 /* AppDelegate.swift */,
 				F2B238AB23282C1900F16C34 /* FirstViewController.swift */,
 				F2B238AD23282C1900F16C34 /* SecondViewController.swift */,
+				F2B238CF232840E200F16C34 /* ThirdViewController.swift */,
 				F2B238AF23282C1900F16C34 /* Main.storyboard */,
 				F2B238B223282C1A00F16C34 /* Assets.xcassets */,
 				F2B238B423282C1A00F16C34 /* LaunchScreen.storyboard */,
@@ -202,6 +206,7 @@
 			files = (
 				F2B238AE23282C1900F16C34 /* SecondViewController.swift in Sources */,
 				F2B238AA23282C1900F16C34 /* AppDelegate.swift in Sources */,
+				F2B238D0232840E200F16C34 /* ThirdViewController.swift in Sources */,
 				F2B238AC23282C1900F16C34 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,6 +234,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				F2B238B023282C1900F16C34 /* Base */,
+				F2B238D2232843C700F16C34 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -367,6 +373,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QZ46U46VDH;
 				INFOPLIST_FILE = AWMTest01/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -385,6 +392,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QZ46U46VDH;
 				INFOPLIST_FILE = AWMTest01/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
