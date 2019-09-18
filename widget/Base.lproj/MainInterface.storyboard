@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="widget" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="37"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sonoff-Test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zso-1J-I9D">
+                                <rect key="frame" x="10" y="8" width="90" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tf6-jJ-cEM">
+                                <rect key="frame" x="108" y="3" width="51" height="31"/>
+                                <connections>
+                                    <action selector="onoffswitch:" destination="M4Y-Lb-cyx" eventType="valueChanged" id="PDD-3f-6q5"/>
+                                </connections>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tL3-vz-Wj8">
+                                <rect key="frame" x="253" y="3.5" width="56" height="30"/>
+                                <state key="normal" title="ON/OFF"/>
+                                <connections>
+                                    <action selector="onoff:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="cHl-P1-kHY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Porton" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bhc-Gh-bIw">
+                                <rect key="frame" x="185" y="8" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="tintColor" red="0.87843137250000003" green="0.51372549020000002" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tL3-vz-Wj8" firstAttribute="centerY" secondItem="S3S-Oj-5AN" secondAttribute="centerY" id="0gQ-21-bTz"/>
+                            <constraint firstItem="tL3-vz-Wj8" firstAttribute="centerX" secondItem="S3S-Oj-5AN" secondAttribute="centerX" constant="121" id="Cpt-KH-k2f"/>
+                            <constraint firstItem="Bhc-Gh-bIw" firstAttribute="centerX" secondItem="S3S-Oj-5AN" secondAttribute="centerX" constant="51" id="K27-qk-5rj"/>
+                            <constraint firstItem="Bhc-Gh-bIw" firstAttribute="centerY" secondItem="S3S-Oj-5AN" secondAttribute="centerY" id="P8K-Ni-bIV"/>
+                            <constraint firstItem="zso-1J-I9D" firstAttribute="centerX" secondItem="S3S-Oj-5AN" secondAttribute="centerX" constant="-105" id="Van-cM-evB"/>
+                            <constraint firstItem="Tf6-jJ-cEM" firstAttribute="centerY" secondItem="S3S-Oj-5AN" secondAttribute="centerY" id="aKQ-7w-OPc"/>
+                            <constraint firstItem="zso-1J-I9D" firstAttribute="centerY" secondItem="S3S-Oj-5AN" secondAttribute="centerY" id="gtj-Es-BCS"/>
+                            <constraint firstItem="Tf6-jJ-cEM" firstAttribute="centerX" secondItem="S3S-Oj-5AN" secondAttribute="centerX" constant="-27.5" id="hbY-9y-ked"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ssy-KU-ocm"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="37"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="107.2" y="32.833583208395808"/>
+        </scene>
+    </scenes>
+</document>

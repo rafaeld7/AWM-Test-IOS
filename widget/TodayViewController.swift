@@ -1,0 +1,45 @@
+//
+//  TodayViewController.swift
+//  widget
+//
+//  Created by AWM Solutions on 9/17/19.
+//  Copyright © 2019 AWM Solutions. All rights reserved.
+//
+
+import UIKit
+import NotificationCenter
+
+class TodayViewController: UIViewController, NCWidgetProviding {
+        
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view from its nib.
+    }
+    @IBAction func onoffswitch(_ sender: Any) {
+        let urls = "http://10.0.2.65/cm?cmnd=Power%20TOGGLE"
+        let url = NSURL(string: urls)
+        let datos :NSData? = NSData(contentsOf: url! as URL)
+        let texto = NSString(data: datos! as Data, encoding: String.Encoding.utf8.rawValue)
+        print(texto!)
+    }
+    
+    @IBAction func onoff(_ sender: Any) {
+        let urls = "http://10.0.0.89/cm?cmnd=Power%20Blink"
+        let url = NSURL(string: urls)
+        let datos :NSData? = NSData(contentsOf: url! as URL)
+        let texto = NSString(data: datos! as Data, encoding: String.Encoding.utf8.rawValue)
+        print(texto!)
+    }
+    
+        
+    func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
+        // Perform any setup necessary in order to update the view.
+        
+        // If an error is encountered, use NCUpdateResult.Failed
+        // If there's no update required, use NCUpdateResult.NoData
+        // If there's an update, use NCUpdateResult.NewData
+        
+        completionHandler(NCUpdateResult.newData)
+    }
+    
+}

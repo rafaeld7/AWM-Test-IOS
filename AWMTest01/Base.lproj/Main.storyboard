@@ -27,8 +27,100 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.12941176469999999" green="0.58823529409999997" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usuario:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ox2-4c-Cmi">
+                                <rect key="frame" x="25" y="111" width="64" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AWM@awm.do" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBo-oN-CSR">
+                                <rect key="frame" x="116" y="111" width="116" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conectar con :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QmF-9i-PGa">
+                                <rect key="frame" x="25" y="179" width="113" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HVF-hm-o8t">
+                                <rect key="frame" x="129" y="226" width="40" height="30"/>
+                                <state key="normal" title="IFTTT"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Administrar GPS : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rd7-Io-FBc">
+                                <rect key="frame" x="25" y="298.5" width="139" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s1s-jO-Ug7">
+                                <rect key="frame" x="45" y="365" width="72" height="30"/>
+                                <state key="normal" title="TrackSolid"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contactanos:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Hr-UV-LlF">
+                                <rect key="frame" x="25" y="433" width="103" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W3O-mD-OsE">
+                                <rect key="frame" x="184" y="365" width="53" height="30"/>
+                                <state key="normal" title="Ruptela"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSf-ht-Lxq">
+                                <rect key="frame" x="58" y="523" width="37" height="30"/>
+                                <state key="normal" title="AWM"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w3f-D1-pAh">
+                                <rect key="frame" x="103" y="523" width="67" height="30"/>
+                                <state key="normal" title="Facebook"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pre-Py-I6c">
+                                <rect key="frame" x="184" y="523" width="69" height="30"/>
+                                <state key="normal" title="Instagram"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWg-8C-Ri8">
+                                <rect key="frame" x="268" y="523" width="48" height="30"/>
+                                <state key="normal" title="Twitter"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="smc-c4-kLS">
+                                <rect key="frame" x="268" y="106" width="40" height="30"/>
+                                <state key="normal" title="Editar"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="W3O-mD-OsE" firstAttribute="centerY" secondItem="cXZ-wM-bY0" secondAttribute="centerY" constant="71" id="09v-ta-WmD"/>
+                            <constraint firstItem="smc-c4-kLS" firstAttribute="centerY" secondItem="cXZ-wM-bY0" secondAttribute="centerY" constant="-188" id="1uj-tU-iJQ"/>
+                            <constraint firstItem="w3f-D1-pAh" firstAttribute="centerY" secondItem="cXZ-wM-bY0" secondAttribute="centerY" constant="229" id="3hS-7w-5JP"/>
+                            <constraint firstItem="aSf-ht-Lxq" firstAttribute="centerX" secondItem="cXZ-wM-bY0" secondAttribute="centerX" constant="-111" id="5Zh-yB-q2y"/>
+                            <constraint firstItem="QmF-9i-PGa" firstAttribute="centerY" secondItem="cXZ-wM-bY0" secondAttribute="centerY" constant="-119.5" id="5n1-Mh-Ozr"/>
+                            <constraint firstItem="QmF-9i-PGa" firstAttribute="centerX" secondItem="cXZ-wM-bY0" secondAttribute="centerX" constant="-106" id="8kJ-W5-Zut"/>
+                            <constraint firstItem="w3f-D1-pAh" firstAttribute="centerX" secondItem="cXZ-wM-bY0" secondAttribute="centerX" constant="-51" id="A0j-QH-da4"/>
+                            <constraint firstItem="W3O-mD-OsE" firstAttribute="centerX" secondItem="cXZ-wM-bY0" secondAttribute="centerX" constant="23" id="AQT-Xm-eqG"/>
+                            <constraint firstItem="HVF-hm-o8t" firstAttribute="centerX" secondItem="cXZ-wM-bY0" secondAttribute="centerX" constant="-38.5" id="F98-Cm-E0r"/>
+                            <constraint firstItem="Ox2-4c-Cmi" firstAttribute="centerX" secondItem="cXZ-wM-bY0" secondAttribute="centerX" constant="-130.5" id="Fep-bi-37q"/>
+                            <constraint firstItem="s1s-jO-Ug7" firstAttribute="centerX" secondItem="cXZ-wM-bY0" secondAttribute="centerX" constant="-106.5" id="LFv-JC-7E6"/>
+                            <constraint firstItem="wBo-oN-CSR" firstAttribute="centerX" secondItem="cXZ-wM-bY0" secondAttribute="centerX" constant="-13.5" id="LWN-Qs-m5f"/>
+                            <constraint firstItem="rd7-Io-FBc" firstAttribute="centerX" secondItem="cXZ-wM-bY0" secondAttribute="centerX" constant="-93" id="LaU-L3-wRY"/>
+                            <constraint firstItem="Pre-Py-I6c" firstAttribute="centerY" secondItem="cXZ-wM-bY0" secondAttribute="centerY" constant="229" id="Ngk-e6-Ykf"/>
+                            <constraint firstItem="9Hr-UV-LlF" firstAttribute="centerX" secondItem="cXZ-wM-bY0" secondAttribute="centerX" constant="-111" id="NhZ-6z-qQx"/>
+                            <constraint firstItem="rd7-Io-FBc" firstAttribute="centerY" secondItem="cXZ-wM-bY0" secondAttribute="centerY" id="Qml-71-99m"/>
+                            <constraint firstItem="rd7-Io-FBc" firstAttribute="centerX" secondItem="cXZ-wM-bY0" secondAttribute="centerX" constant="-93" id="VG0-WC-O4u"/>
+                            <constraint firstItem="rd7-Io-FBc" firstAttribute="centerY" secondItem="cXZ-wM-bY0" secondAttribute="centerY" id="VMe-WU-Q6O"/>
+                            <constraint firstItem="wBo-oN-CSR" firstAttribute="centerY" secondItem="cXZ-wM-bY0" secondAttribute="centerY" constant="-187.5" id="VbW-Yd-9Vp"/>
+                            <constraint firstItem="smc-c4-kLS" firstAttribute="centerX" secondItem="cXZ-wM-bY0" secondAttribute="centerX" constant="100.5" id="cq0-2g-RiM"/>
+                            <constraint firstItem="HVF-hm-o8t" firstAttribute="centerY" secondItem="cXZ-wM-bY0" secondAttribute="centerY" constant="-68" id="fLA-gM-XWH"/>
+                            <constraint firstItem="s1s-jO-Ug7" firstAttribute="centerY" secondItem="cXZ-wM-bY0" secondAttribute="centerY" constant="71" id="gtE-U5-aNp"/>
+                            <constraint firstItem="9Hr-UV-LlF" firstAttribute="centerY" secondItem="cXZ-wM-bY0" secondAttribute="centerY" constant="134.5" id="orX-Mw-B9S"/>
+                            <constraint firstItem="aSf-ht-Lxq" firstAttribute="centerY" secondItem="cXZ-wM-bY0" secondAttribute="centerY" constant="229" id="p4q-rT-1PV"/>
+                            <constraint firstItem="bWg-8C-Ri8" firstAttribute="centerX" secondItem="cXZ-wM-bY0" secondAttribute="centerX" constant="104.5" id="pfu-Gl-6T7"/>
+                            <constraint firstItem="Ox2-4c-Cmi" firstAttribute="centerY" secondItem="cXZ-wM-bY0" secondAttribute="centerY" constant="-187.5" id="uFM-hc-Ve3"/>
+                            <constraint firstItem="Pre-Py-I6c" firstAttribute="centerX" secondItem="cXZ-wM-bY0" secondAttribute="centerX" constant="31" id="xFl-Pi-8n5"/>
+                            <constraint firstItem="bWg-8C-Ri8" firstAttribute="centerY" secondItem="cXZ-wM-bY0" secondAttribute="centerY" constant="229" id="xsP-yh-1bu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="DBl-Jv-ztV"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Usuario" image="Usuario" id="hyU-zK-F0S"/>
