@@ -12,15 +12,25 @@ import Firebase
 class ThirdViewController: UIViewController {
     
     @IBOutlet weak var labelEmail: UILabel!
+    //@IBOutlet weak var labelUsername: UILabel!
     
-
+//    var ref = DatabaseReference.init()
+//    
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Nombre de usuario
+       // guard let username = Auth.auth().currentUser?.displayName else { return }
+       //  labelUsername.text = "\(username)"
+        guard let email    = Auth.auth().currentUser?.email  else { return }
+        labelEmail.text = "\(email)"
         
-        guard let username = Auth.auth().currentUser?.displayName else { return }
-        labelEmail.text = "\(username)"
-        
+        //Agregar Datos a FIREBASE
+//        self.ref = Database.database().reference()
+//        self.saveData()
+//
+//
         }
+    
     @IBAction func SignOut(_ sender: UIButton) {
         do {
             try Auth.auth().signOut()
@@ -29,6 +39,11 @@ class ThirdViewController: UIViewController {
             print(error)
         }
     }
+    
+//    func saveData(){
+//        self.ref.child("Dispositivo").childByAutoId().setValue("Sonoff")
+//        print(ref.childByAutoId())
+//    }
 }
 
 

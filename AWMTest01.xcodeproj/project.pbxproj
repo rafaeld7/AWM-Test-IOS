@@ -8,10 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		66D63FA48744D9D10018F131 /* Pods_AWMTest01Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F61B105A33212C6E0309C54 /* Pods_AWMTest01Tests.framework */; };
-		98CE788C829EEE5DA485E109 /* Pods_AWMTest01.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E450DA8636A99DF0DEE28665 /* Pods_AWMTest01.framework */; };
+		C58ABE4AAF29DA3D861A1D2E /* Pods_AWMTest01.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E450DA8636A99DF0DEE28665 /* Pods_AWMTest01.framework */; };
 		F24DF4F12333C0E50006AC85 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24DF4F02333C0E50006AC85 /* SignInVC.swift */; };
 		F24DF4F32333C1120006AC85 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24DF4F22333C1120006AC85 /* SignUpVC.swift */; };
 		F24DF4F52333C1310006AC85 /* SignOutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24DF4F42333C1310006AC85 /* SignOutVC.swift */; };
+		F250AAA6233F882800A4B28D /* BaseDeDatos.swift in Sources */ = {isa = PBXBuildFile; fileRef = F250AAA5233F882800A4B28D /* BaseDeDatos.swift */; };
 		F29FA00523314C5B0049B7FC /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F29FA00423314C5B0049B7FC /* NotificationCenter.framework */; };
 		F29FA00823314C5B0049B7FC /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29FA00723314C5B0049B7FC /* TodayViewController.swift */; };
 		F29FA00B23314C5B0049B7FC /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F29FA00923314C5B0049B7FC /* MainInterface.storyboard */; };
@@ -73,6 +74,7 @@
 		F24DF4F02333C0E50006AC85 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		F24DF4F22333C1120006AC85 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		F24DF4F42333C1310006AC85 /* SignOutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOutVC.swift; sourceTree = "<group>"; };
+		F250AAA5233F882800A4B28D /* BaseDeDatos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDeDatos.swift; sourceTree = "<group>"; };
 		F283442F23341A5500E2122F /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F283443123341A5C00E2122F /* FirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F29FA00223314C5B0049B7FC /* widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = widget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,7 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98CE788C829EEE5DA485E109 /* Pods_AWMTest01.framework in Frameworks */,
+				C58ABE4AAF29DA3D861A1D2E /* Pods_AWMTest01.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +161,14 @@
 				F2E5092323394CCC00D6E53D /* AlertController.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		F250AAA4233F866300A4B28D /* Base de Datos */ = {
+			isa = PBXGroup;
+			children = (
+				F250AAA5233F882800A4B28D /* BaseDeDatos.swift */,
+			);
+			path = "Base de Datos";
 			sourceTree = "<group>";
 		};
 		F29FA00323314C5B0049B7FC /* Frameworks */ = {
@@ -210,6 +220,7 @@
 		F2B238A823282C1900F16C34 /* AWMTest01 */ = {
 			isa = PBXGroup;
 			children = (
+				F250AAA4233F866300A4B28D /* Base de Datos */,
 				F24DF4EF2333C0690006AC85 /* Login */,
 				F24DF4EE2333C0270006AC85 /* Vistas Principales */,
 				F2B238A923282C1900F16C34 /* AppDelegate.swift */,
@@ -261,7 +272,7 @@
 				F2B238A323282C1900F16C34 /* Frameworks */,
 				F2B238A423282C1900F16C34 /* Resources */,
 				F29FA01323314C5B0049B7FC /* Embed App Extensions */,
-				6B5EEAAA40F7EAE89953428B /* [CP] Embed Pods Frameworks */,
+				09D09AA1263BCD2A2543E6F0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -364,6 +375,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		09D09AA1263BCD2A2543E6F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AWMTest01/Pods-AWMTest01-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AWMTest01/Pods-AWMTest01-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AWMTest01/Pods-AWMTest01-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		45D20CBFC26EA7CFF67E179C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -384,23 +412,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6B5EEAAA40F7EAE89953428B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AWMTest01/Pods-AWMTest01-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AWMTest01/Pods-AWMTest01-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AWMTest01/Pods-AWMTest01-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7C0DEEE5F895A158C930D956 /* [CP] Check Pods Manifest.lock */ = {
@@ -463,6 +474,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2B238AE23282C1900F16C34 /* SecondViewController.swift in Sources */,
+				F250AAA6233F882800A4B28D /* BaseDeDatos.swift in Sources */,
 				F2B238AA23282C1900F16C34 /* AppDelegate.swift in Sources */,
 				F2B238D0232840E200F16C34 /* ThirdViewController.swift in Sources */,
 				F2B238AC23282C1900F16C34 /* FirstViewController.swift in Sources */,
