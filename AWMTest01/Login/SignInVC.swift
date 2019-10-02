@@ -15,7 +15,7 @@ import Firebase
 
 
 
-class SignInVC: UIViewController {
+class SignInVC: UIViewController, UITextFieldDelegate {
     
     //@IBOutlet weak var butt: FBSDKLoginButton!
     
@@ -23,7 +23,7 @@ class SignInVC: UIViewController {
     @IBOutlet weak var passwordTF: UITextField!
     
     @IBAction func onSignInTapped(_ sender: Any) {
-        
+        emailTF.delegate = self
         guard let email = emailTF.text,
         email != "",
         let password = passwordTF.text,
@@ -48,9 +48,7 @@ class SignInVC: UIViewController {
             
             if (user.user.isEmailVerified == false){
                 AlertController.showAlert(inViewController: self, title: "Confirmar Correo electrónico📨", message: "Busque en el buzón de su correo \(email) un mesaje enviado desde la dirección Noreply@Awm-Ios.Firebaseapp.Com que contiene el link de confirmación ")} else {
-//                AlertController.showAlert(inViewController: self, title: "Bienvenido✅", message: "Su correo ya esta confirmado, favor de  pulsar -Iniciar sesión- para continuar ")
-                self.performSegue(withIdentifier: "signInSegue", sender: nil)
-                
+                self.performSegue(withIdentifier: "signInSegue", sender: nil)  
             }
             
             print(user.user.email ?? "MISSING EMAIL")
@@ -60,17 +58,16 @@ class SignInVC: UIViewController {
            self.performSegue(withIdentifier: "signInSegue", sender: nil)
         })
     }
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "signInSegue"{
-//            let vc = segue.destination as! FirstViewController
-//
-//        }
-//   }
+
+    //funcion para cerrar teclado
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
     
-    
-    
-  //  @IBAction func loginConFacebook(_ sender: Any) {
- //   }
-    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    //fin cerra teclado
  
 }

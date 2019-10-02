@@ -9,13 +9,14 @@
 import UIKit
 import Firebase
 
-class SignUpVC: UIViewController {
+class SignUpVC: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var userNameTF: UITextField!
     @IBOutlet weak var emailTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
     
     @IBAction func onSignUpTapped(_ sender: Any) {
+        userNameTF.delegate = self
         guard let username = userNameTF.text,
         username != "",
         let email = emailTF.text,
@@ -32,28 +33,12 @@ class SignUpVC: UIViewController {
                 return
                 
             }
+            
+            
             guard let user = user else { return }
             print(user.user.email ?? "MISSING EMAIL")
             print(user.user.uid)
             
-           // user.user.isEmailVerified ? print("verificado") : print("aun sin verificar")
-            //
-            //confirmacion de correo electronico
-//            if ( user.user.isEmailVerified == false){
-//                user.user.sendEmailVerification(completion: nil)
-//
-//            }
-//           user.user.isEmailVerified ? print("verificado") : print("aun sin verificar")
-//
-//            if (user.user.isEmailVerified == false){
-//                AlertController.showAlert(inViewController: self, title: "Confirmar Correo electrónico✅", message: "Busque en el buzón de su correo \(email) un mesaje enviado desde la dirección Noreply@Awm-Ios.Firebaseapp.Com que contiene el link de confirmación ")//} else {
-//                self.performSegue(withIdentifier: "backtoSignIn", sender: nil)
-//            }
-//            if (user.user.isEmailVerified == true){
-//                 self.performSegue(withIdentifier: "backtoSignIn", sender: nil)
-//            }
-//
-//            //
 
             let changeRequest = user.user.createProfileChangeRequest()
             changeRequest.displayName = username
@@ -68,5 +53,15 @@ class SignUpVC: UIViewController {
             })
             
         })
+    } //Guardar teclado LINK:  https://www.youtube.com/watch?v=ahzvP8ulebk
+    //funcion para cerrar teclado
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    //fin cerra teclado
 }
