@@ -12,7 +12,7 @@
 		F24DF4F12333C0E50006AC85 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24DF4F02333C0E50006AC85 /* SignInVC.swift */; };
 		F24DF4F32333C1120006AC85 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24DF4F22333C1120006AC85 /* SignUpVC.swift */; };
 		F24DF4F52333C1310006AC85 /* SignOutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24DF4F42333C1310006AC85 /* SignOutVC.swift */; };
-		F250AAA6233F882800A4B28D /* BaseDeDatos.swift in Sources */ = {isa = PBXBuildFile; fileRef = F250AAA5233F882800A4B28D /* BaseDeDatos.swift */; };
+		F251A3EC2344F4DE00098032 /* BaseDeDatos.swift in Sources */ = {isa = PBXBuildFile; fileRef = F251A3EB2344F4DE00098032 /* BaseDeDatos.swift */; };
 		F29FA00523314C5B0049B7FC /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F29FA00423314C5B0049B7FC /* NotificationCenter.framework */; };
 		F29FA00823314C5B0049B7FC /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29FA00723314C5B0049B7FC /* TodayViewController.swift */; };
 		F29FA00B23314C5B0049B7FC /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F29FA00923314C5B0049B7FC /* MainInterface.storyboard */; };
@@ -74,7 +74,7 @@
 		F24DF4F02333C0E50006AC85 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		F24DF4F22333C1120006AC85 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		F24DF4F42333C1310006AC85 /* SignOutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOutVC.swift; sourceTree = "<group>"; };
-		F250AAA5233F882800A4B28D /* BaseDeDatos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDeDatos.swift; sourceTree = "<group>"; };
+		F251A3EB2344F4DE00098032 /* BaseDeDatos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDeDatos.swift; sourceTree = "<group>"; };
 		F283442F23341A5500E2122F /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F283443123341A5C00E2122F /* FirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F29FA00223314C5B0049B7FC /* widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = widget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,7 +166,7 @@
 		F250AAA4233F866300A4B28D /* Base de Datos */ = {
 			isa = PBXGroup;
 			children = (
-				F250AAA5233F882800A4B28D /* BaseDeDatos.swift */,
+				F251A3EB2344F4DE00098032 /* BaseDeDatos.swift */,
 			);
 			path = "Base de Datos";
 			sourceTree = "<group>";
@@ -474,7 +474,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2B238AE23282C1900F16C34 /* SecondViewController.swift in Sources */,
-				F250AAA6233F882800A4B28D /* BaseDeDatos.swift in Sources */,
+				F251A3EC2344F4DE00098032 /* BaseDeDatos.swift in Sources */,
 				F2B238AA23282C1900F16C34 /* AppDelegate.swift in Sources */,
 				F2B238D0232840E200F16C34 /* ThirdViewController.swift in Sources */,
 				F2B238AC23282C1900F16C34 /* FirstViewController.swift in Sources */,
