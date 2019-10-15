@@ -7,13 +7,20 @@
 //
 
 import UIKit
+import CocoaMQTT
 
 class FirstViewController: UIViewController {
     @IBOutlet weak var boton: UIButton!
     @IBOutlet weak var myTextView: UITextView!
-  
+    
+    //MQTT
+     let mqttClient = CocoaMQTT(clientID: "sonoff01", host: "34.73.245.233", port: 1883)
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+    
         // Do any additional setup after loading the view, typically from a nib.
         boton.layer.cornerRadius = 14
         
@@ -40,6 +47,16 @@ class FirstViewController: UIViewController {
         print(texto!)
         myTextView.text = "\(String(describing: texto))"
     }
+    
+    //Boton MQTT
+    
+    @IBAction func sonoff(_ sender: UIButton) {
+        mqttClient.connect()
+       // print(mqttClient)
+       
+        
+    }
+    
     
 }
 
