@@ -12,17 +12,15 @@ import CocoaMQTT
 class FirstViewController: UIViewController {
     @IBOutlet weak var boton: UIButton!
     @IBOutlet weak var myTextView: UITextView!
+    @IBOutlet weak var myTextView01: UITextView!
     
     //MQTT
-     let mqttClient = CocoaMQTT(clientID: "sonoff01", host: "34.73.245.233", port: 1883)
-    
+   let mqttClient = CocoaMQTT(clientID: "sonoff-4682", host: "34.73.245.233", port: 1883)
+   let mqttClient01 = CocoaMQTT(clientID: "sonoff-5700", host: "34.73.245.233", port: 1883)
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-        // Do any additional setup after loading the view, typically from a nib.
-        boton.layer.cornerRadius = 14
         
     }//Boton
     @IBAction func onoffSonoffPorton(_ sender: Any) {
@@ -30,7 +28,9 @@ class FirstViewController: UIViewController {
     }
     //Boton Switch
     @IBAction func onoffsonoffNormal(_ sender: Any) {
-        let urls = "http://10.0.2.65/cm?cmnd=Power%20TOGGLE"
+    //cambiar URL
+        let urls = "http://10.0.1.237/cm?cmnd=Power%20TOGGLE"
+        //
         let url = NSURL(string: urls)
         let datos :NSData? = NSData(contentsOf: url! as URL)
         let texto = NSString(data: datos! as Data, encoding: String.Encoding.utf8.rawValue)
@@ -51,11 +51,25 @@ class FirstViewController: UIViewController {
     //Boton MQTT
     
     @IBAction func sonoff(_ sender: UIButton) {
-        mqttClient.connect()
+         mqttClient01.connect()
        // print(mqttClient)
-       
+       myTextView01.text = "\(String(mqttClient01.clientID))"
+    }
+    
+    @IBAction func swSonoffMQTT(_ sender: UISwitch) {
+        mqttClient.connect()
+      //  myTextView01.text = "\(String(mqttClient.debugDescription))"
+      //  myTextView01.text = "\(String(mqttClient.clientID))"
+        myTextView01.text = "\(Bool(mqttClient.connect()))"
+
+    }
+    
+    func mqtttest(){
+        let mqttClientTest = CocoaMQTT(clientID: "sonoff-4682", host: "34.73.245.233", port: 1883)
+        mqttClientTest.connect()
         
     }
+    
     
     
 }
