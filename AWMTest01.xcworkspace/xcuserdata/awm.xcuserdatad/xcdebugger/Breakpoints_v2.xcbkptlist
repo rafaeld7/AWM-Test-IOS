@@ -2,4 +2,98 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AWMTest01/Vistas Principales/FirstViewController.swift"
+            timestampString = "594855100.873152"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AWMTest01/MQTT/MainViewController.swift"
+            timestampString = "593644895.200925"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "MainViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AWMTest01.MainViewController.retainSwitcher.getter : weak Swift.Optional&lt;__C.UISwitch&gt;"
+                  moduleName = "AWMTest01"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/awm/Desktop/APP/AWMTest01/AWMTest01/MQTT/MainViewController.swift"
+                  timestampString = "593613467.738349"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AWMTest01.MainViewController.retainSwitcher.setter : weak Swift.Optional&lt;__C.UISwitch&gt;"
+                  moduleName = "AWMTest01"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/awm/Desktop/APP/AWMTest01/AWMTest01/MQTT/MainViewController.swift"
+                  timestampString = "593613467.739918"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AWMTest01.MainViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; AWMTest01.MainViewController"
+                  moduleName = "AWMTest01"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/awm/Desktop/APP/AWMTest01/AWMTest01/MQTT/MainViewController.swift"
+                  timestampString = "593613467.741273"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "708">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AWMTest01.MainViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;AWMTest01.MainViewController&gt;"
+                  moduleName = "AWMTest01"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/awm/Desktop/APP/AWMTest01/AWMTest01/MQTT/MainViewController.swift"
+                  timestampString = "593613467.742631"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "684">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

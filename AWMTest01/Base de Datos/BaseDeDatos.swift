@@ -21,6 +21,7 @@ class BaseDeDatos: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideKeyboard()
         self.ref = Database.database().reference()
         textUsuario.delegate = self
        

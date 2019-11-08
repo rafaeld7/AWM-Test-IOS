@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		66D63FA48744D9D10018F131 /* Pods_AWMTest01Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F61B105A33212C6E0309C54 /* Pods_AWMTest01Tests.framework */; };
 		C58ABE4AAF29DA3D861A1D2E /* Pods_AWMTest01.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E450DA8636A99DF0DEE28665 /* Pods_AWMTest01.framework */; };
+		F24DDD14236A1D7C00E3789A /* SettingsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24DDD13236A1D7C00E3789A /* SettingsTableVC.swift */; };
 		F24DF4F12333C0E50006AC85 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24DF4F02333C0E50006AC85 /* SignInVC.swift */; };
 		F24DF4F32333C1120006AC85 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24DF4F22333C1120006AC85 /* SignUpVC.swift */; };
 		F24DF4F52333C1310006AC85 /* SignOutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24DF4F42333C1310006AC85 /* SignOutVC.swift */; };
 		F251A3EC2344F4DE00098032 /* BaseDeDatos.swift in Sources */ = {isa = PBXBuildFile; fileRef = F251A3EB2344F4DE00098032 /* BaseDeDatos.swift */; };
-		F265B407235603DF00A18B96 /* ConexionMosquitto.swift in Sources */ = {isa = PBXBuildFile; fileRef = F265B406235603DF00A18B96 /* ConexionMosquitto.swift */; };
+		F288A16F23687DA7003970C5 /* TestMQTT.swift in Sources */ = {isa = PBXBuildFile; fileRef = F288A16E23687DA7003970C5 /* TestMQTT.swift */; };
+		F294037A236CD44F009D49F2 /* ConfiguracionDispositivo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2940379236CD44F009D49F2 /* ConfiguracionDispositivo.swift */; };
 		F29FA00523314C5B0049B7FC /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F29FA00423314C5B0049B7FC /* NotificationCenter.framework */; };
 		F29FA00823314C5B0049B7FC /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29FA00723314C5B0049B7FC /* TodayViewController.swift */; };
 		F29FA00B23314C5B0049B7FC /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F29FA00923314C5B0049B7FC /* MainInterface.storyboard */; };
@@ -26,6 +28,10 @@
 		F2B238B623282C1A00F16C34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B238B423282C1A00F16C34 /* LaunchScreen.storyboard */; };
 		F2B238C123282C1A00F16C34 /* AWMTest01Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B238C023282C1A00F16C34 /* AWMTest01Tests.swift */; };
 		F2B238D0232840E200F16C34 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B238CF232840E200F16C34 /* ThirdViewController.swift */; };
+		F2C562022360F9B600062B1F /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C562012360F9B600062B1F /* Extension.swift */; };
+		F2C562042360F9DF00062B1F /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C562032360F9DF00062B1F /* MessageTableViewCell.swift */; };
+		F2C562082360FA3700062B1F /* MqttManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C562072360FA3700062B1F /* MqttManagerDelegate.swift */; };
+		F2C5620A2360FA8C00062B1F /* MqttSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C562092360FA8C00062B1F /* MqttSettings.swift */; };
 		F2E5091C23391BBD00D6E53D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2E5091B23391BBD00D6E53D /* GoogleService-Info.plist */; };
 		F2E5092423394CCC00D6E53D /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E5092323394CCC00D6E53D /* AlertController.swift */; };
 		FC49D0A0E7510E6DEE1BF6C4 /* Pods_widget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1DB051A6B763576494C59D9 /* Pods_widget.framework */; };
@@ -72,13 +78,15 @@
 		D9F8A176AF6DC5285932D4CA /* Pods-widget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-widget.debug.xcconfig"; path = "Target Support Files/Pods-widget/Pods-widget.debug.xcconfig"; sourceTree = "<group>"; };
 		E450DA8636A99DF0DEE28665 /* Pods_AWMTest01.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AWMTest01.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBF1B26AFA2F92FC4CF4D246 /* Pods-AWMTest01Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWMTest01Tests.debug.xcconfig"; path = "Target Support Files/Pods-AWMTest01Tests/Pods-AWMTest01Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		F24DDD13236A1D7C00E3789A /* SettingsTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableVC.swift; sourceTree = "<group>"; };
 		F24DF4F02333C0E50006AC85 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		F24DF4F22333C1120006AC85 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		F24DF4F42333C1310006AC85 /* SignOutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOutVC.swift; sourceTree = "<group>"; };
 		F251A3EB2344F4DE00098032 /* BaseDeDatos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDeDatos.swift; sourceTree = "<group>"; };
-		F265B406235603DF00A18B96 /* ConexionMosquitto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConexionMosquitto.swift; sourceTree = "<group>"; };
 		F283442F23341A5500E2122F /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F283443123341A5C00E2122F /* FirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F288A16E23687DA7003970C5 /* TestMQTT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMQTT.swift; sourceTree = "<group>"; };
+		F2940379236CD44F009D49F2 /* ConfiguracionDispositivo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguracionDispositivo.swift; sourceTree = "<group>"; };
 		F29FA00223314C5B0049B7FC /* widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = widget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		F29FA00423314C5B0049B7FC /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		F29FA00723314C5B0049B7FC /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +105,10 @@
 		F2B238C223282C1A00F16C34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2B238CF232840E200F16C34 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		F2B238D2232843C700F16C34 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		F2C562012360F9B600062B1F /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		F2C562032360F9DF00062B1F /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		F2C562072360FA3700062B1F /* MqttManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MqttManagerDelegate.swift; sourceTree = "<group>"; };
+		F2C562092360FA8C00062B1F /* MqttSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MqttSettings.swift; sourceTree = "<group>"; };
 		F2E509172339006B00D6E53D /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2E5091B23391BBD00D6E53D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F2E5092323394CCC00D6E53D /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
@@ -173,10 +185,22 @@
 			path = "Base de Datos";
 			sourceTree = "<group>";
 		};
+		F2572B37236B727100E12843 /* Dispositivos  */ = {
+			isa = PBXGroup;
+			children = (
+				F2940379236CD44F009D49F2 /* ConfiguracionDispositivo.swift */,
+			);
+			path = "Dispositivos ";
+			sourceTree = "<group>";
+		};
 		F265B405235603A600A18B96 /* MQTT */ = {
 			isa = PBXGroup;
 			children = (
-				F265B406235603DF00A18B96 /* ConexionMosquitto.swift */,
+				F288A16E23687DA7003970C5 /* TestMQTT.swift */,
+				F2C562012360F9B600062B1F /* Extension.swift */,
+				F2C562032360F9DF00062B1F /* MessageTableViewCell.swift */,
+				F24DDD13236A1D7C00E3789A /* SettingsTableVC.swift */,
+				F2C561F62360F64000062B1F /* mqttManager */,
 			);
 			path = MQTT;
 			sourceTree = "<group>";
@@ -230,6 +254,7 @@
 		F2B238A823282C1900F16C34 /* AWMTest01 */ = {
 			isa = PBXGroup;
 			children = (
+				F2572B37236B727100E12843 /* Dispositivos  */,
 				F265B405235603A600A18B96 /* MQTT */,
 				F250AAA4233F866300A4B28D /* Base de Datos */,
 				F24DF4EF2333C0690006AC85 /* Login */,
@@ -251,6 +276,15 @@
 				F2B238C223282C1A00F16C34 /* Info.plist */,
 			);
 			path = AWMTest01Tests;
+			sourceTree = "<group>";
+		};
+		F2C561F62360F64000062B1F /* mqttManager */ = {
+			isa = PBXGroup;
+			children = (
+				F2C562072360FA3700062B1F /* MqttManagerDelegate.swift */,
+				F2C562092360FA8C00062B1F /* MqttSettings.swift */,
+			);
+			path = mqttManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -485,15 +519,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2B238AE23282C1900F16C34 /* SecondViewController.swift in Sources */,
+				F24DDD14236A1D7C00E3789A /* SettingsTableVC.swift in Sources */,
 				F251A3EC2344F4DE00098032 /* BaseDeDatos.swift in Sources */,
-				F265B407235603DF00A18B96 /* ConexionMosquitto.swift in Sources */,
 				F2B238AA23282C1900F16C34 /* AppDelegate.swift in Sources */,
 				F2B238D0232840E200F16C34 /* ThirdViewController.swift in Sources */,
+				F2C562022360F9B600062B1F /* Extension.swift in Sources */,
+				F2C562082360FA3700062B1F /* MqttManagerDelegate.swift in Sources */,
+				F2C5620A2360FA8C00062B1F /* MqttSettings.swift in Sources */,
+				F2C562042360F9DF00062B1F /* MessageTableViewCell.swift in Sources */,
 				F2B238AC23282C1900F16C34 /* FirstViewController.swift in Sources */,
 				F2E5092423394CCC00D6E53D /* AlertController.swift in Sources */,
 				F24DF4F32333C1120006AC85 /* SignUpVC.swift in Sources */,
 				F24DF4F12333C0E50006AC85 /* SignInVC.swift in Sources */,
+				F294037A236CD44F009D49F2 /* ConfiguracionDispositivo.swift in Sources */,
 				F24DF4F52333C1310006AC85 /* SignOutVC.swift in Sources */,
+				F288A16F23687DA7003970C5 /* TestMQTT.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

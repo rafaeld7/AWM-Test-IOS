@@ -18,6 +18,7 @@ class ThirdViewController: UIViewController {
 //    
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideKeyboard()
         //Nombre de usuario
        // guard let username = Auth.auth().currentUser?.displayName else { return }
        //  labelUsername.text = "\(username)"
