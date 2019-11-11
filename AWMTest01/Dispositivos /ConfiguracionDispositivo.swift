@@ -15,11 +15,14 @@ class ConfiguracionDispositivo: UIViewController, UIPickerViewDelegate, UIPicker
     @IBOutlet weak var mensaje: UITextField!
     @IBOutlet weak var topic: UITextField!
     @IBOutlet weak var currentStateLabel: UILabel!
+    @IBOutlet weak var txtEstado: UITextField!
+    
+    
     var isConnected = false
     var receivedMessages: [(topic: String, message: String)] = []
     var currentTopic: String?
     var pickerData: [String] = [String]()
-
+  
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,7 +66,9 @@ class ConfiguracionDispositivo: UIViewController, UIPickerViewDelegate, UIPicker
         return pickerData [row]
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        <#code#>
+
+        mensaje.text = pickerData[row]
+      
     }
     
     
@@ -73,14 +78,15 @@ class ConfiguracionDispositivo: UIViewController, UIPickerViewDelegate, UIPicker
     @IBAction func Enviar(_ sender: Any) {
         MqttManager.shared.subscribe(topic: topic.text!)
         
-        var currentTopic = topic.text
+       let currentTopic = topic.text
     
-        
         if let topic = currentTopic {
             MqttManager.shared.publish(message: mensaje.text!, topic: topic)
         } else {
             print("Topic is not selected")
         }
+        
+       txtEstado.text = "\((MqttManager.shared.subscribedTopics))"
     }
     
     
