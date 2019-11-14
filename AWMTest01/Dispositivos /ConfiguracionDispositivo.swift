@@ -16,6 +16,7 @@ class ConfiguracionDispositivo: UIViewController, UIPickerViewDelegate, UIPicker
     @IBOutlet weak var topic: UITextField!
     @IBOutlet weak var currentStateLabel: UILabel!
     @IBOutlet weak var txtEstado: UITextField!
+    @IBOutlet weak var sw: UISwitch!
     
     
     var isConnected = false
@@ -34,7 +35,7 @@ class ConfiguracionDispositivo: UIViewController, UIPickerViewDelegate, UIPicker
         self.picker.dataSource = self
         
         //input the data into the array
-        pickerData = ["Toggle", "blink"]
+        pickerData = ["Toggle", "Blink"]
         
         //Estado del servidor (conectado/desconectado)
         if !isConnected{
@@ -48,11 +49,10 @@ class ConfiguracionDispositivo: UIViewController, UIPickerViewDelegate, UIPicker
         else{
             MqttManager.shared.disconnect()
         }
-        
         print(pickerData)
     }
 
-     // Funciones del picker
+    //Funciones del picker
     //Numeros de columna
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -66,27 +66,33 @@ class ConfiguracionDispositivo: UIViewController, UIPickerViewDelegate, UIPicker
         return pickerData [row]
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-
         mensaje.text = pickerData[row]
-      
     }
+    //Fin del picker
     
-    
-    //fin del picker
-    
-    
+    //Boton enviar mensaje
     @IBAction func Enviar(_ sender: Any) {
         MqttManager.shared.subscribe(topic: topic.text!)
-        
        let currentTopic = topic.text
-    
-        if let topic = currentTopic {
+    if let topic = currentTopic {
             MqttManager.shared.publish(message: mensaje.text!, topic: topic)
         } else {
             print("Topic is not selected")
         }
+       txtEstado.text = "\((MqttManager.shared.status))"
+    }
+    //Switch enviar mensaje
+    
+    @IBAction func swEnviarMensaje(_ sender: Any) {
+        if sw.isOn {
+            MqttManager.shared.publish(message: "1", topic: "cmnd/sonoff-5700/power")
+            sw.isOn = true
+        } else {
+            MqttManager.shared.publish(message: "0", topic: "cmnd/sonoff-5700/power")
+            sw.isOn = false
+        }
         
-       txtEstado.text = "\((MqttManager.shared.subscribedTopics))"
+    
     }
     
     
@@ -101,31 +107,18 @@ extension ConfiguracionDispositivo: MqttManagerDelegate {
             isConnected = true
             currentStateLabel.text = "Conectado"
             currentStateLabel.textColor = UIColor(hex: 0x4996FA)
-            //setupButtonStyle(button: subscribeButton, alpha:1, isEnabled: true)
-           // setupButtonStyle(button: connectButton, alpha: 0.5, isEnabled: false)
-           // setupButtonStyle(button: disconnectButton, alpha: 1, isEnabled: true)
-          // editingMessage(true)
         }
         
         func onMqttDisconnected() {
             isConnected = false
             currentStateLabel.text = "Desconectado"
             currentStateLabel.textColor = UIColor(hex: 0xC1001D)
-//            setupButtonStyle(button: subscribeButton, alpha: 0.5, isEnabled: false)
-//            setupButtonStyle(button: connectButton, alpha: 1, isEnabled: true)
-//            setupButtonStyle(button: disconnectButton, alpha: 0.5, isEnabled: false)
-//            currentTopic = nil
-//            messageTextField.text = ""
-//            countSubscriptions.text = "My subsciptions (0)"
-//            editingMessage(true)
         }
         
         @objc func onMqttMessageReceived(message: String, topic: String) {
-          //  receivedMessages.append((topic: topic, message: message))
-           // self.tableView.reloadData()
         }
         
         func onMqttError(message: String) { }
-    }
+        }
 
 

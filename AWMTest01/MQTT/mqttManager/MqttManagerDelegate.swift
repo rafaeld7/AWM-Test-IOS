@@ -53,7 +53,7 @@ class MqttManager {
         }
         
         status = .connecting
-        let clientId = "AMakarov-" + String(ProcessInfo().processIdentifier)
+        let clientId = "admin" + String(ProcessInfo().processIdentifier)
         
         mqttClient = CocoaMQTT(clientID: clientId, host: host, port: UInt16(port))
         if let mqttClient = mqttClient {

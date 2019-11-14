@@ -11,6 +11,7 @@ target 'AWMTest01' do
   pod 'Firebase/Database'
   pod 'SwiftyJSON'
   pod 'CocoaMQTT'  
+  pod 'RAMPaperSwitch'
   
   # Pods for AWMTest01
 
