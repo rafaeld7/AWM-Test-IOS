@@ -47,7 +47,7 @@ class SignInVC: UIViewController, UITextFieldDelegate {
                 user.user.isEmailVerified ? print("verificado") : print("aun sin verificar")
             
             if (user.user.isEmailVerified == false){
-                AlertController.showAlert(inViewController: self, title: "Confirmar Correo electrónico📨", message: "Busque en el buzón de su correo \(email) un mesaje enviado desde la dirección Noreply@Awm-Ios.Firebaseapp.Com que contiene el link de confirmación ")} else {
+                AlertController.showAlert(inViewController: self, title: "Confirmar Correo electrónico 📨", message: "Busque en el buzón de su correo \(email) un mesaje enviado desde la dirección Noreply@Awm-Ios.Firebaseapp.Com que contiene el link de confirmación ")} else {
                 self.performSegue(withIdentifier: "signInSegue", sender: nil)  
             }
             

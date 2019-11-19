@@ -14,6 +14,7 @@
 		F24DF4F32333C1120006AC85 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24DF4F22333C1120006AC85 /* SignUpVC.swift */; };
 		F24DF4F52333C1310006AC85 /* SignOutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24DF4F42333C1310006AC85 /* SignOutVC.swift */; };
 		F251A3EC2344F4DE00098032 /* BaseDeDatos.swift in Sources */ = {isa = PBXBuildFile; fileRef = F251A3EB2344F4DE00098032 /* BaseDeDatos.swift */; };
+		F26E0CE523842B7C0026E109 /* LightMQTT.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26E0CE423842B7C0026E109 /* LightMQTT.swift */; };
 		F288A16F23687DA7003970C5 /* TestMQTT.swift in Sources */ = {isa = PBXBuildFile; fileRef = F288A16E23687DA7003970C5 /* TestMQTT.swift */; };
 		F294037A236CD44F009D49F2 /* ConfiguracionDispositivo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2940379236CD44F009D49F2 /* ConfiguracionDispositivo.swift */; };
 		F29FA00523314C5B0049B7FC /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F29FA00423314C5B0049B7FC /* NotificationCenter.framework */; };
@@ -83,6 +84,7 @@
 		F24DF4F22333C1120006AC85 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		F24DF4F42333C1310006AC85 /* SignOutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOutVC.swift; sourceTree = "<group>"; };
 		F251A3EB2344F4DE00098032 /* BaseDeDatos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDeDatos.swift; sourceTree = "<group>"; };
+		F26E0CE423842B7C0026E109 /* LightMQTT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LightMQTT.swift; path = "../../../../../Documents/LightMQTT-master/Sources/LightMQTT.swift"; sourceTree = "<group>"; };
 		F283442F23341A5500E2122F /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F283443123341A5C00E2122F /* FirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F288A16E23687DA7003970C5 /* TestMQTT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMQTT.swift; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 		F265B405235603A600A18B96 /* MQTT */ = {
 			isa = PBXGroup;
 			children = (
+				F26E0CE423842B7C0026E109 /* LightMQTT.swift */,
 				F288A16E23687DA7003970C5 /* TestMQTT.swift */,
 				F2C562012360F9B600062B1F /* Extension.swift */,
 				F2C562032360F9DF00062B1F /* MessageTableViewCell.swift */,
@@ -519,6 +522,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2B238AE23282C1900F16C34 /* SecondViewController.swift in Sources */,
+				F26E0CE523842B7C0026E109 /* LightMQTT.swift in Sources */,
 				F24DDD14236A1D7C00E3789A /* SettingsTableVC.swift in Sources */,
 				F251A3EC2344F4DE00098032 /* BaseDeDatos.swift in Sources */,
 				F2B238AA23282C1900F16C34 /* AppDelegate.swift in Sources */,

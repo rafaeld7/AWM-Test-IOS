@@ -48,6 +48,9 @@ class SecondViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     }
     //Fin de Funciones Picker
     
+    @IBAction func Guardar(_ sender: Any) {
+        
+    }
     
 
 }

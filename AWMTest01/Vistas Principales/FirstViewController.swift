@@ -27,11 +27,12 @@ class FirstViewController: UIViewController {
 
     
     //MQTT
-  let mqttClient = CocoaMQTT(clientID: "sonoff-4682", host: "34.73.245.233", port: 1883)
-  let mqttClient01 = CocoaMQTT(clientID: "sonoff-5700", host: "34.73.245.233", port: 1883)
+//  let mqttClient = CocoaMQTT(clientID: "sonoff-4682", host: "34.73.245.233", port: 1883)
+//  let mqttClient01 = CocoaMQTT(clientID: "sonoff-5700", host: "34.73.245.233", port: 1883)
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        MqttManager.shared.delegate = self
         //Guardar Teclado
         hideKeyboard()
         //Estado del servidor (conectado/desconectado)
@@ -93,6 +94,24 @@ class FirstViewController: UIViewController {
         }
     }
 
+    @IBAction func refrescarEstadoServidor(_ sender: Any) {
+         MqttManager.shared.delegate = self
+        if !isConnected{
+            receivedMessages.removeAll()
+            MqttManager.shared.connect(host: MqttSettings.shared.host,
+                                       port: Int(MqttSettings.shared.port)!,
+                                       username: MqttSettings.shared.username,
+                                       password: MqttSettings.shared.password,
+                                       cleanSession: MqttSettings.shared.cleanSession)
+        }
+        else{
+          //  MqttManager.shared.disconnect()
+        }
+        print(pickerData)
+    }
+    
+    
+    
    // Fin de MQTT
 }
 

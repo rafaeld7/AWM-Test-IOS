@@ -1,19 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7DX-Ld-yR1">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="EHf-IW-A2E">
+        <scene sceneID="00f-zJ-YdU">
             <objects>
-                <viewController id="01J-lp-oVM" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="7DX-Ld-yR1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y3W-lm-LaG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BIENVENIDO A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kyE-C5-Aj5">
+                                <rect key="frame" x="65" y="166" width="245" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="61" id="DXl-Qa-XrP"/>
+                                    <constraint firstAttribute="width" constant="245" id="OFy-eV-cDx"/>
+                                    <constraint firstAttribute="height" constant="61" id="gMk-Ij-OML"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="245" id="kf2-Sl-cp6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AWMSolutions" highlightedImage="AWMSolutions" translatesAutoresizingMaskIntoConstraints="NO" id="496-U0-Lyu">
+                                <rect key="frame" x="28" y="243" width="318" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="5Ig-t7-HOu"/>
+                                    <constraint firstAttribute="width" constant="318" id="TXq-9t-aQK"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1019607843" green="0.42745098040000001" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kyE-C5-Aj5" firstAttribute="centerY" secondItem="Y3W-lm-LaG" secondAttribute="centerY" constant="-137" id="GpW-gv-5gT"/>
+                            <constraint firstItem="kyE-C5-Aj5" firstAttribute="centerX" secondItem="Y3W-lm-LaG" secondAttribute="centerX" id="JDT-dZ-JuE"/>
+                            <constraint firstItem="496-U0-Lyu" firstAttribute="centerX" secondItem="Y3W-lm-LaG" secondAttribute="centerX" constant="-0.5" id="K5g-c6-oep"/>
+                            <constraint firstItem="kyE-C5-Aj5" firstAttribute="centerY" secondItem="Y3W-lm-LaG" secondAttribute="centerY" constant="-137" id="Tnu-St-ZLv"/>
+                            <constraint firstItem="kyE-C5-Aj5" firstAttribute="centerX" secondItem="Y3W-lm-LaG" secondAttribute="centerX" id="fOF-Hi-4rf"/>
+                            <constraint firstItem="496-U0-Lyu" firstAttribute="centerY" secondItem="Y3W-lm-LaG" secondAttribute="centerY" constant="-57" id="oLC-X7-5n0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ADt-Pg-422"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gwV-kR-WBV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+            <point key="canvasLocation" x="712.79999999999995" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="AWMSolutions" width="1244" height="180"/>
+    </resources>
 </document>

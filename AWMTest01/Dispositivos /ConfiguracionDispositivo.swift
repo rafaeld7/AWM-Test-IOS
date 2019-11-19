@@ -29,11 +29,9 @@ class ConfiguracionDispositivo: UIViewController, UIPickerViewDelegate, UIPicker
         super.viewDidLoad()
         MqttManager.shared.delegate = self
         hideKeyboard()
-        
         //connect data :
         self.picker.delegate = self
         self.picker.dataSource = self
-        
         //input the data into the array
         pickerData = ["Toggle", "Blink"]
         
@@ -84,18 +82,15 @@ class ConfiguracionDispositivo: UIViewController, UIPickerViewDelegate, UIPicker
     //Switch enviar mensaje
     
     @IBAction func swEnviarMensaje(_ sender: Any) {
-        if sw.isOn {
-            MqttManager.shared.publish(message: "1", topic: "cmnd/sonoff-5700/power")
+     if sw.isOn {
+        mensaje.text = "\(MqttManager.shared.subscribedTopics)"
+        MqttManager.shared.publish(message: "1", topic: "cmnd/sonoff-5700/power")
             sw.isOn = true
         } else {
-            MqttManager.shared.publish(message: "0", topic: "cmnd/sonoff-5700/power")
+        MqttManager.shared.publish(message: "0", topic: "cmnd/sonoff-5700/power")
             sw.isOn = false
         }
-        
-    
     }
-    
-    
     
     
     //final de la clase
