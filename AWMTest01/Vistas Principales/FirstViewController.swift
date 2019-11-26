@@ -8,6 +8,7 @@
 
 import UIKit
 import CocoaMQTT
+import Firebase
 
 class FirstViewController: UIViewController {
 
@@ -18,23 +19,39 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var sw: UISwitch!
     @IBOutlet weak var currentStateLabel: UILabel!
     
-    
-
     var isConnected = false
     var receivedMessages: [(topic: String, message: String)] = []
     var currentTopic: String?
     var pickerData: [String] = [String]()
-
-    
-    //MQTT
-//  let mqttClient = CocoaMQTT(clientID: "sonoff-4682", host: "34.73.245.233", port: 1883)
-//  let mqttClient01 = CocoaMQTT(clientID: "sonoff-5700", host: "34.73.245.233", port: 1883)
+    var Switch : Bool?
+    var refHandler: DatabaseHandle!
+    var ref = DatabaseReference.init()
+    var dispositivo : String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         MqttManager.shared.delegate = self
         //Guardar Teclado
         hideKeyboard()
+        //Base de Datos Firebase
+          ref = Database.database().reference()
+        //------Escribir Datos---//
+        
+        //-----leer Datos------//
+        refHandler = ref.child("Usuario").child((Auth.auth().currentUser?.uid)!).child("Dispositivo").child("Switch").observe(.value, with: { (Snapshot) in
+            print("Switch : \(Snapshot.value!) ")
+            self.Switch = Snapshot.value! as? Bool
+           
+        //-----Estado Dispositivo-------//
+            if self.Switch ?? true {
+                self.sw.isOn = true
+            }else{
+                self.sw.isOn = false
+            }
+           
+      
+        })
+        
         //Estado del servidor (conectado/desconectado)
         if !isConnected{
             receivedMessages.removeAll()
@@ -79,18 +96,21 @@ class FirstViewController: UIViewController {
     //  Inicio de MQTT CLEAN
     @IBAction func ONOFFSonoffmqtt() {
         MqttManager.shared.publish(message: "3", topic: "cmnd/sonoff-5700/power")
-
     }
-
+    
 
     @IBAction func swSonoffMQTT(_ sender: UISwitch) {
+       
         if sw.isOn {
             MqttManager.shared.publish(message: "1", topic: "cmnd/sonoff-4682/power")
             sw.isOn = true
             myTextView01.text = MqttManager.shared.isConnected().description
+            //BD Firebase
+        self.ref.child("Usuario").child((Auth.auth().currentUser?.uid)!).child("Dispositivo").child("Switch").setValue(true)
         } else {
             MqttManager.shared.publish(message: "0", topic: "cmnd/sonoff-4682/power")
             sw.isOn = false
+        self.ref.child("Usuario").child((Auth.auth().currentUser?.uid)!).child("Dispositivo").child("Switch").setValue(false)
         }
     }
 
@@ -109,9 +129,6 @@ class FirstViewController: UIViewController {
         }
         print(pickerData)
     }
-    
-    
-    
    // Fin de MQTT
 }
 

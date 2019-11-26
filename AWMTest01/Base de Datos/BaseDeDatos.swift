@@ -24,7 +24,6 @@ class BaseDeDatos: UIViewController, UITextFieldDelegate {
         hideKeyboard()
         self.ref = Database.database().reference()
         textUsuario.delegate = self
-       
     }
     
     func saveFIRData() {

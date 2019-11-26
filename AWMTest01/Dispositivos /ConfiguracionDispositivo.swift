@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ConfiguracionDispositivo: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
@@ -17,6 +18,8 @@ class ConfiguracionDispositivo: UIViewController, UIPickerViewDelegate, UIPicker
     @IBOutlet weak var currentStateLabel: UILabel!
     @IBOutlet weak var txtEstado: UITextField!
     @IBOutlet weak var sw: UISwitch!
+    @IBOutlet weak var pruebaBD: UITextField!
+    @IBOutlet weak var resultadoBD: UILabel!
     
     
     var isConnected = false
@@ -24,17 +27,24 @@ class ConfiguracionDispositivo: UIViewController, UIPickerViewDelegate, UIPicker
     var currentTopic: String?
     var pickerData: [String] = [String]()
   
+    var ref: DatabaseReference!
+    var databaseHandle: DatabaseHandle!
+    
+    var postData = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         MqttManager.shared.delegate = self
         hideKeyboard()
+        //base datos Firebase
+        self.ref = Database.database().reference()
+    //self.ref.child("Usuario").child((Auth.auth().currentUser?.uid)!).setValue(["username": Auth.auth().currentUser?.displayName])
+        
         //connect data :
         self.picker.delegate = self
         self.picker.dataSource = self
         //input the data into the array
         pickerData = ["Toggle", "Blink"]
-        
         //Estado del servidor (conectado/desconectado)
         if !isConnected{
             receivedMessages.removeAll()
@@ -91,6 +101,24 @@ class ConfiguracionDispositivo: UIViewController, UIPickerViewDelegate, UIPicker
             sw.isOn = false
         }
     }
+    
+    //Inicio de Base de Datos
+    
+    @IBAction func guardar(_ sender: Any) {
+        
+//        self.ref.child("Usuario").child((Auth.auth().currentUser?.uid)!).setValue(["username": Auth.auth().currentUser?.displayName])
+        
+        //Leer datos de Firebase
+//        self.databaseHandle = ref.child((Auth.auth().currentUser?.uid)!).observe(.childAdded, with: { (Data) in
+//            let usuario : String = (Data.value as? String)!
+//            debugPrint(usuario)
+//
+//        })
+ 
+    }
+
+    //Fin de Base Datos
+  
     
     
     //final de la clase
