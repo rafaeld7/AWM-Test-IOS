@@ -20,8 +20,7 @@ class TestMQTT: UIViewController {
     @IBOutlet weak var connectButton: UIButton!
     @IBOutlet weak var disconnectButton: UIButton!
     
-    @IBOutlet weak var tableView: UITableView!
-    
+
     var receivedMessages: [(topic: String, message: String)] = []
     var isConnected = false
     var currentTopic: String?
@@ -32,8 +31,8 @@ class TestMQTT: UIViewController {
         hideKeyboard()
         
         MqttManager.shared.delegate = self
-        tableView.delegate = self
-        tableView.dataSource = self
+       // tableView.delegate = self
+       // tableView.dataSource = self
         messageTextField.setBottomBorder()
     }
     
@@ -51,7 +50,7 @@ class TestMQTT: UIViewController {
         case 0:
             if !isConnected {
                 receivedMessages.removeAll()
-                tableView.reloadData()
+               // tableView.reloadData()
                 MqttManager.shared.connect(host: MqttSettings.shared.host,
                                            port: Int(MqttSettings.shared.port)!,
                                            username: MqttSettings.shared.username,
@@ -183,7 +182,7 @@ extension TestMQTT: MqttManagerDelegate {
 
     @objc func onMqttMessageReceived(message: String, topic: String) {
         receivedMessages.append((topic: topic, message: message))
-        self.tableView.reloadData()
+        //self.tableView.reloadData()
     }
 
     func onMqttError(message: String) { }

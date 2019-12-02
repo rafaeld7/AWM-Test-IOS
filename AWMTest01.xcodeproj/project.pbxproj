@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		66D63FA48744D9D10018F131 /* Pods_AWMTest01Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F61B105A33212C6E0309C54 /* Pods_AWMTest01Tests.framework */; };
 		C58ABE4AAF29DA3D861A1D2E /* Pods_AWMTest01.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E450DA8636A99DF0DEE28665 /* Pods_AWMTest01.framework */; };
+		F21F821C2390581700B5F8E8 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21F821B2390581700B5F8E8 /* TableViewCell.swift */; };
+		F21F821E23905BED00B5F8E8 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21F821D23905BED00B5F8E8 /* File.swift */; };
+		F21F8220239060A900B5F8E8 /* ListaDispositivo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21F821F239060A900B5F8E8 /* ListaDispositivo.swift */; };
 		F24DDD14236A1D7C00E3789A /* SettingsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24DDD13236A1D7C00E3789A /* SettingsTableVC.swift */; };
 		F24DF4F12333C0E50006AC85 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24DF4F02333C0E50006AC85 /* SignInVC.swift */; };
 		F24DF4F32333C1120006AC85 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24DF4F22333C1120006AC85 /* SignUpVC.swift */; };
 		F24DF4F52333C1310006AC85 /* SignOutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24DF4F42333C1310006AC85 /* SignOutVC.swift */; };
 		F251A3EC2344F4DE00098032 /* BaseDeDatos.swift in Sources */ = {isa = PBXBuildFile; fileRef = F251A3EB2344F4DE00098032 /* BaseDeDatos.swift */; };
+		F26A01D9238F171E00885D60 /* tableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A01D8238F171E00885D60 /* tableView.swift */; };
 		F26E0CE523842B7C0026E109 /* LightMQTT.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26E0CE423842B7C0026E109 /* LightMQTT.swift */; };
 		F288A16F23687DA7003970C5 /* TestMQTT.swift in Sources */ = {isa = PBXBuildFile; fileRef = F288A16E23687DA7003970C5 /* TestMQTT.swift */; };
 		F294037A236CD44F009D49F2 /* ConfiguracionDispositivo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2940379236CD44F009D49F2 /* ConfiguracionDispositivo.swift */; };
@@ -79,11 +83,15 @@
 		D9F8A176AF6DC5285932D4CA /* Pods-widget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-widget.debug.xcconfig"; path = "Target Support Files/Pods-widget/Pods-widget.debug.xcconfig"; sourceTree = "<group>"; };
 		E450DA8636A99DF0DEE28665 /* Pods_AWMTest01.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AWMTest01.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBF1B26AFA2F92FC4CF4D246 /* Pods-AWMTest01Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWMTest01Tests.debug.xcconfig"; path = "Target Support Files/Pods-AWMTest01Tests/Pods-AWMTest01Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		F21F821B2390581700B5F8E8 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		F21F821D23905BED00B5F8E8 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		F21F821F239060A900B5F8E8 /* ListaDispositivo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaDispositivo.swift; sourceTree = "<group>"; };
 		F24DDD13236A1D7C00E3789A /* SettingsTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableVC.swift; sourceTree = "<group>"; };
 		F24DF4F02333C0E50006AC85 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		F24DF4F22333C1120006AC85 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		F24DF4F42333C1310006AC85 /* SignOutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOutVC.swift; sourceTree = "<group>"; };
 		F251A3EB2344F4DE00098032 /* BaseDeDatos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDeDatos.swift; sourceTree = "<group>"; };
+		F26A01D8238F171E00885D60 /* tableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableView.swift; sourceTree = "<group>"; };
 		F26E0CE423842B7C0026E109 /* LightMQTT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LightMQTT.swift; path = "../../../../../Documents/LightMQTT-master/Sources/LightMQTT.swift"; sourceTree = "<group>"; };
 		F283442F23341A5500E2122F /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F283443123341A5C00E2122F /* FirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,9 +166,20 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F21F821A239057E200B5F8E8 /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				F21F821B2390581700B5F8E8 /* TableViewCell.swift */,
+				F21F821D23905BED00B5F8E8 /* File.swift */,
+				F21F821F239060A900B5F8E8 /* ListaDispositivo.swift */,
+			);
+			path = Table;
+			sourceTree = "<group>";
+		};
 		F24DF4EE2333C0270006AC85 /* Vistas Principales */ = {
 			isa = PBXGroup;
 			children = (
+				F21F821A239057E200B5F8E8 /* Table */,
 				F2B238AB23282C1900F16C34 /* FirstViewController.swift */,
 				F2B238AD23282C1900F16C34 /* SecondViewController.swift */,
 				F2B238CF232840E200F16C34 /* ThirdViewController.swift */,
@@ -191,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				F2940379236CD44F009D49F2 /* ConfiguracionDispositivo.swift */,
+				F26A01D8238F171E00885D60 /* tableView.swift */,
 			);
 			path = "Dispositivos ";
 			sourceTree = "<group>";
@@ -525,8 +545,12 @@
 				F26E0CE523842B7C0026E109 /* LightMQTT.swift in Sources */,
 				F24DDD14236A1D7C00E3789A /* SettingsTableVC.swift in Sources */,
 				F251A3EC2344F4DE00098032 /* BaseDeDatos.swift in Sources */,
+				F21F821C2390581700B5F8E8 /* TableViewCell.swift in Sources */,
+				F21F821E23905BED00B5F8E8 /* File.swift in Sources */,
 				F2B238AA23282C1900F16C34 /* AppDelegate.swift in Sources */,
+				F26A01D9238F171E00885D60 /* tableView.swift in Sources */,
 				F2B238D0232840E200F16C34 /* ThirdViewController.swift in Sources */,
+				F21F8220239060A900B5F8E8 /* ListaDispositivo.swift in Sources */,
 				F2C562022360F9B600062B1F /* Extension.swift in Sources */,
 				F2C562082360FA3700062B1F /* MqttManagerDelegate.swift in Sources */,
 				F2C5620A2360FA8C00062B1F /* MqttSettings.swift in Sources */,

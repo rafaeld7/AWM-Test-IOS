@@ -22,7 +22,6 @@ class SettingsTableVC: UIViewController {
     }
     
     @IBAction func Guardar(_ sender: UIButton) {
-        
         saveSettings()
     }
     // Replace with generic

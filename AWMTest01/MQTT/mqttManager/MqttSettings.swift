@@ -56,7 +56,7 @@ class MqttSettings {
     //30
     var connectionTimeOut: String {
         get {
-            return UserDefaults.standard.string(forKey: baseKey + keys.connectionTimeOut.rawValue) ?? "30"
+            return UserDefaults.standard.string(forKey: baseKey + keys.connectionTimeOut.rawValue) ?? ""
         }
         set {
             UserDefaults.standard.set(newValue, forKey: baseKey + keys.connectionTimeOut.rawValue)
@@ -65,7 +65,7 @@ class MqttSettings {
     //60
     var keepAlive: String {
         get {
-            return UserDefaults.standard.string(forKey: baseKey + keys.keepAlive.rawValue) ?? "60"
+            return UserDefaults.standard.string(forKey: baseKey + keys.keepAlive.rawValue) ?? ""
         }
         set {
             UserDefaults.standard.set(newValue, forKey: baseKey + keys.keepAlive.rawValue)
